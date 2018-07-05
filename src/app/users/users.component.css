@@ -1,0 +1,11 @@
+@media screen and (min-width: 800px) {
+    /*.user-card {max-width: 50%}*/
+    /* .user-card {margin-left: 10%} */
+    /* .user-card {margin-right: 10%} */
+}
+
+.friend-list-img {
+    max-height: 70px; 
+    margin-top:5%; 
+    margin-bottom: 5%
+}

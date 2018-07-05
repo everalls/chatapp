@@ -1,0 +1,54 @@
+#main-outer {
+    display: flex;  
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 0;
+    padding: 0;
+    height: 100%;
+    min-height: 100%;
+    /* max-width: 600px; */
+    margin:auto;
+  }
+  
+  #main-footer {
+    flex: none;
+    /* border: solid 1px green; */
+  }
+  
+  #main-header {
+      flex: none;
+      /* border: solid 1px green; */
+    }
+  
+  #main-content {
+    flex: 1;
+    background-color: #fafafa; 
+    /* border: solid 1px red; */
+  }
+  
+  
+  .navbar-nav {
+      flex-direction: row;
+  }
+      
+  .nav-link {
+      padding-right: .5rem !important;
+      padding-left: .5rem !important;
+  }
+      
+  /* Fixes dropdown menus placed on the right side */
+  .ml-auto .dropdown-menu {
+      left: auto !important;
+      right: 0px;
+  }
+  
+  .fa {
+      font-size: 24px;
+      color: whitesmoke !important;
+  }
+  
+  #main-footer
+  {
+      color: white;
+      background: grey;
+  }

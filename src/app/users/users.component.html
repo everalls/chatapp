@@ -1,0 +1,14 @@
+<div class="card user-card" *ngFor="let user of users">
+  <a routerLink="/chat/{{user.id}}">
+  <div class="card-img-top d-flex align-items-center bg-light text-dark font-weight-light">
+      <div style="width:80px; height:80px">
+          <img class="friend-list-img img-fluid mx-auto d-block rounded img-thumbnail" src="../../assets/{{user.id}}.png" alt="Card image cap">
+      </div>
+      <div>
+      <h6 class="m-2"> {{user.name}}  </h6>
+      <p class="col m-2 text-muted"><small>{{user.slog}}</small></p>
+      </div>
+
+  </div>
+  </a>
+</div>

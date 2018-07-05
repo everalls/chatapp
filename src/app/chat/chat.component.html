@@ -1,0 +1,58 @@
+<!-- Chat component - to display the mssages of the chat with given user, and to send new messages
+Possible navigations: to all users list, and to cpecific user info details -->
+
+<div id='chat-outer' class='d-flex'>
+
+  <!-- Some control buttons at the top -->
+  <div id='chat-header' style="flex: none; margin:8px; padding-bottom: 16px">
+    <small>
+    <button type="button" class="btn btn-secondary btn-sm" routerLink="/users">All friends</button>
+    <button type="button" class="btn btn-info btn-sm" routerLink="/finfo/{{user.id}}">Friend info</button>
+    </small>
+  </div>
+
+  <div id='chat-content' style="flex: 1">
+    
+    <!-- This is for vertical stack of all the messages - from the newest to the latest -->
+    <div class="d-flex flex-column-reverse">
+       
+     <!--  This "flex" is for horisontal order and alignent of the content of each message: 
+      incoming come from the left, outcoming - from the right -->
+      <div class="d-flex rounded" *ngFor="let msg of user.msgs" 
+          [class.justify-content-start]="!msg.incoming" 
+          [class.out-msg]="!msg.incoming"
+          [class.justify-content-end]="msg.incoming" 
+          [class.in-msg]="msg.incoming">
+        
+        <!-- Control of the user pic in the message   -->
+        <div class="msg-img-div">
+          <img class="other-img rounded img-thumbnail" src="../../assets/{{user.id}}.png">
+          <small>{{msg.mtext}} </small>
+          <img class="my-img rounded img-thumbnail" src="../../assets/profile_placeholder.png">
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Input text area always be at the bottom -->
+  <div id='chat-footer' style="flex: none">
+    <div style="width:100%; background-color: white" class="d-flex">
+      <div style="width:90%;">
+        <form>
+          <small>
+            <textarea id="msg-txt" name="txt1" [(ngModel)]="msgText" class="border-0" placeholder="Type your message..."
+              required>
+          </textarea>
+          </small>
+        </form>
+      </div>
+      <div class="align-self-center">
+        <button type="button" class="btn btn-outline-primary" (click)="newMsg()">
+          <i class="fa fa-play">
+          </i>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
