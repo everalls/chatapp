@@ -7,6 +7,7 @@ import { UsersComponent } from './users/users.component';
 import { ChatdataService} from './chatdata.service';
 import { ChatComponent } from './chat/chat.component';
 import { FinfoComponent } from './finfo/finfo.component';
+import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 
 
 @NgModule({
@@ -22,7 +23,8 @@ import { FinfoComponent } from './finfo/finfo.component';
     FormsModule
   ],
   providers: [
-    ChatdataService
+    ChatdataService,
+    {provide: LocationStrategy, useClass: HashLocationStrategy}
   ],
   bootstrap: [AppComponent]
 })
