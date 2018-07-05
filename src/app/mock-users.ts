@@ -79,4 +79,34 @@ export const USERS: User[] = [
  ]
 },
 
+{ id: '60',
+    name: 'Fedya Rashpil',
+    nick: 'Fedar',
+    tel: '877774646',
+    city: 'Caesaria, ISR',
+    bday: 'Oct 12, 1971', gender: 'Male',
+    lang: 'Armenian',
+    slog: 'I wait you...',
+    msgs: [
+        {mtext: 'Im your friend...', incoming: false},
+        {mtext: 'Who are you?', incoming: true},
+        {mtext: 'Hello...', incoming: false},
+    ]
+ },
+
+ { id: '70',
+    name: 'Michael Ogly',
+    nick: 'Micho',
+    tel: '777888777',
+    city: 'Paris, FR',
+    bday: 'Nov 25, 1977', gender: 'Male',
+    lang: 'French',
+    slog: 'Be my friend!))',
+    msgs: [
+        {mtext: 'How are you doing?', incoming: false},
+        {mtext: 'Hi', incoming: true},
+        {mtext: 'Good evening', incoming: false},
+    ]
+ }
+
 ];

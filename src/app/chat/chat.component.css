@@ -73,7 +73,8 @@
     }
   
   #chat-content {
-    background-color: #fafafa; 
+    background-color: #fafafa;
+    overflow: auto; 
     /* border: solid 1px red; */
   }
 

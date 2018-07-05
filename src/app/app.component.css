@@ -23,6 +23,7 @@
   #main-content {
     flex: 1;
     background-color: #fafafa; 
+    overflow: auto;
     /* border: solid 1px red; */
   }
   
