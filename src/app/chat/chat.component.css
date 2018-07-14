@@ -1,53 +1,56 @@
-.in-msg {
+.msg-wrap {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 16px;
+    padding-right: 16px;
+    /* background-color: green; */
+}   
+
+.msg-txt{
     position: relative;
-    margin-bottom: 16px;
-    padding: 8px;
-    margin-left:20%;
-    margin-right:5%; 
-    background-color: rgb(224, 228, 224);
+    padding-left: 16px;
+    padding-right: 16px;
+    max-width: 70%;
+    word-wrap: break-word;
 }
 
+.in-msg {  
+    margin-right :32px;  
+    margin-left: 100px;  
+    background-color: #0083f9;
+    color:white;
+}
+
+.out-msg {
+    margin-left :32px;
+    background-color: white; 
+}
+/* small triangle near the message box*/
 .in-msg::before {
     content: " ";
     height: 0;
     position: absolute;
-    top: 10px;
+    top: 16px;
     width: 0;
     z-index: 1;
-    right: -7px;
+    right: -14px;
     border: medium solid white;
-    border-width: 7px 0 7px 7px;
-    border-color: transparent transparent transparent rgb(224, 228, 224);
+    border-width: 7px 7px 7px 7px;
+    border-color: transparent transparent transparent  #0083f9;
 }
 
-.in-msg .other-img {
-    display: none
-}
-
-.out-msg {
-    position: relative;
-    margin-bottom: 16px;
-    margin-right:20%;
-    margin-left:5%; 
-    padding: 8px;
-    background-color: rgb(216, 230, 240); 
-}
-
-.out-msg .my-img {
-    display: none
-}
-
+/* small triangle near the message box*/
 .out-msg::before {
     content: " ";
     height: 0;
     position: absolute;
-    top: 10px;
+    top: 16px;
     width: 0;
     z-index: 1;
-    left: -7px;
+    left: -14px;
     border: medium solid white;
-    border-width: 7px 7px 7px 0;
-    border-color: transparent rgb(216, 230, 240) transparent transparent;
+    border-width: 7px 7px 7px 7px;
+    border-color: transparent white transparent transparent ;
 }
 
 #chat-outer {
@@ -58,34 +61,74 @@
     padding: 0;
     height: 100%;
     min-height: 100%;
-    /* max-width: 600px; */
     margin:auto;
   }
   
   #chat-footer {
     flex: none;
-    /* border: solid 1px green; */
+    border: solid 1px #e9ecf1;
   }
   
   #chat-header {
       flex: none;
-      /* border: solid 1px green; */
+      background-color: #e7ecf2;
+      border-bottom: thin solid #d7d8db;
+      color: #68696a;  
     }
   
   #chat-content {
-    background-color: #fafafa;
+    padding-top: 16px;  
+    flex: auto;
+    background-color: #e9ecf1;
     overflow: auto; 
-    /* border: solid 1px red; */
-  }
-
-  .msg-img-div img {
-    max-height: 50px; 
-    margin-top:5px; 
-    margin-bottom: 5px
   }
 
   #msg-txt {
     width:100%; 
     resize: none;
     background-color: white
+  }
+
+  /*Showing the picture only of one ofthe  chat opponents - 
+  depending on in/out msg direction.*/
+.hide-img {
+    display: none
+}
+
+.msg-img-div img {
+    max-height: 50px; 
+  }
+
+  /* important to override internal navbar settings of BS*/
+  .navbar {
+    width:100%; 
+    background-color: #e7ecf2;
+    padding-left:8px !important ;
+    padding-right:0px !important ;
+    padding-top:0 !important;
+    padding-bottom:0 !important;
+  }
+
+  .nav-item {
+      color: #68696a;
+      height:100%; 
+      border-left: thin solid #d7d8db; 
+      padding-top:24px;
+      padding-bottom: 24px;
+      padding-left: 8px;
+      padding-right: 8px;
+  }
+
+  .nav-link {
+    padding-top:0 !important;
+    padding-bottom:0 !important;
+  }
+
+  .footer-btn {
+      background-color: white;
+      margin: 5px;
+  }
+
+  #msg-txt {
+      padding-top: 16px;
   }
