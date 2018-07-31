@@ -1,6 +1,57 @@
-<div class="d-flex col-md-6 col-xl-4 mx-auto">
+<div id="users_comp_main" class="d-flex flex-column col-md-6 col-xl-4 mx-auto" style="height: 100%">
+    
+<!--============================ ANIMATED LEFT-SIDE NAVIGATION BAR ==================================-->
+<div id="mySidenav" class="sidenav bg-dark text-light" (click)="toggleSideNav()">
+        <h5> Inbox </h5>
+        <a href="#">
+            <div class="d-flex">
+             <div>All messages</div> <div class="ml-auto">2</div>
+            </div>
+        </a>
+
+        <a href="#">
+                <div class="d-flex">
+                 <div>Unread</div> <div class="ml-auto">7</div>
+                </div>
+        </a>
+
+        <a href="#">
+                <div class="d-flex">
+                 <div>Important</div> <div class="ml-auto">21</div>
+                </div>
+        </a>
+        <a href="#">
+                <div class="d-flex">
+                 <div>Drafts</div> <div class="ml-auto">8</div>
+                </div>
+        </a>
+
+        <a href="#">
+                <div class="d-flex">
+                 <div>All messages</div> <div class="ml-auto">78</div>
+                </div>
+        </a> 
+
+        <hr class="sidenav-separator"> 
+        <br>
+            
+        <a href="#">Unread</a>
+        <a href="#">Important</a>
+        <a href="#">Drafts</a>
+        <hr class="sidenav-separator"> 
+        <br>
+
+        <a href="admin.php"><span class="fa fa-lock" style="margin-right:5px"></span>Admin</a>
+    </div>
+    <!-- ====================================================================================================ß-->
+
+    <div id="users-header"> 
+        <button style="background-color:#1c232a; color:white;" class="border-0" (click)="toggleSideNav()"> 
+            <i class="fa-lg fa fa-bars p-2 border-0"></i>
+        </button>
+    </div>
     <div class="users-cont">
-        <div class="user-card p-2" *ngFor="let user of users">
+        <div class="user-card" *ngFor="let user of users">
 
             <div class="d-flex mb-1">
                 <div class="user-pic-div">
