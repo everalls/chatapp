@@ -10,7 +10,7 @@
         "/chatapp/favicon.ico",
         "/chatapp/index.html",
         "/chatapp/inline.318b50c57b4eba3d437b.bundle.js",
-        "/chatapp/main.01bef3253a8885b70618.bundle.js",
+        "/chatapp/main.226450c27f9f86088a05.bundle.js",
         "/chatapp/polyfills.50b851ccd19aa9b94ce1.bundle.js",
         "/chatapp/styles.cc397e94456bf64c2c42.bundle.css"
       ],
@@ -56,9 +56,9 @@
     "/chatapp/assets/soldier.png": "45ca969576bc90819bf29ffc7d98664150d35506",
     "/chatapp/assets/trump.png": "cb07afa2574a1812e16c4e92d4102f0be4f9d68a",
     "/chatapp/favicon.ico": "84161b857f5c547e3699ddfbffc6d8d737542e01",
-    "/chatapp/index.html": "1846f2023c13ab3df7ddd5e2f9f34e7a179194e8",
+    "/chatapp/index.html": "f3090c053a47c4e0043d085f01c8bd2916ecb27a",
     "/chatapp/inline.318b50c57b4eba3d437b.bundle.js": "998c6060446975e566fd17509558ddc68d72eec3",
-    "/chatapp/main.01bef3253a8885b70618.bundle.js": "474b21ee56ccf0c82a997d31cfb3d4a981825dd5",
+    "/chatapp/main.226450c27f9f86088a05.bundle.js": "852b33d0761bd1223949539b38029532afd7bc66",
     "/chatapp/polyfills.50b851ccd19aa9b94ce1.bundle.js": "106347cf1a53b1dceace39e0d83e6b93936bb95b",
     "/chatapp/styles.cc397e94456bf64c2c42.bundle.css": "921fce5cfcbff5e86ae4e3b9b050a33ca5d72142"
   },
