@@ -1,4 +1,4 @@
-<div id="users_comp_main" class="d-flex flex-column col-md-6 col-xl-4 mx-auto" style="height: 100%">
+<div id="users_comp_main" class="d-flex flex-column col-md-6 col-xl-4" style="height: 100%; width:100%; padding:0; margin:0">
     
 <!--============================ ANIMATED LEFT-SIDE NAVIGATION BAR ==================================-->
 <div id="mySidenav" class="sidenav bg-dark text-light" (click)="toggleSideNav()">
@@ -51,17 +51,17 @@
         </button>
     </div>
     <div class="users-cont">
-        <div class="user-card" *ngFor="let user of users">
+        <div class="user-card" style="width: 100%" *ngFor="let user of users">
 
             <div class="d-flex mb-1">
                 <div class="user-pic-div">
                     <a routerLink="/chat/{{user.id}}">
-                        <img class="friend-list-img img-fluid mx-auto d-block" src="../../assets/{{user.id}}.png" alt="Card image cap">
+                        <img class="friend-list-img img-fluid mx-auto d-block" src='assets/{{user.id}}.png' alt="Card image cap">
                     </a>
                 </div>
                 <a routerLink="/chat/{{user.id}}" style="flex-grow:3">
                     <div>
-                        <p class="text-light mb-0 mt-1"> {{user.name}}</p>
+                        <p class="text-light mb-0"> {{user.name}}</p>
                         <p class="text-secondary">
                             <small>{{user.slog}}</small>
                         </p>

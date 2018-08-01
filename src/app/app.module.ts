@@ -8,7 +8,8 @@ import { ChatdataService} from './chatdata.service';
 import { ChatComponent } from './chat/chat.component';
 import { FinfoComponent } from './finfo/finfo.component';
 import { HashLocationStrategy, LocationStrategy } from '@angular/common';
-
+import { ServiceWorkerModule } from '@angular/service-worker';
+import { environment } from '../environments/environment';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { HashLocationStrategy, LocationStrategy } from '@angular/common';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    environment.production ? ServiceWorkerModule.register('ngsw-worker.js') : []
   ],
   providers: [
     ChatdataService,

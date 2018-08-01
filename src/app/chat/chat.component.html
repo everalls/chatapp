@@ -37,13 +37,13 @@ Possible navigations: to all users list, and to cpecific user info details -->
       >
         <!-- Control of the user pic in the message and chat box  -->
         <div class="msg-img-div" [class.in-img]="msg.incoming" [class.out-img]="!msg.incoming">
-          <img [class.hide-img]="msg.incoming" src="../../assets/{{user.id}}.png">
+          <img [class.hide-img]="msg.incoming" src="assets/{{user.id}}.png">
         </div>
         <div class="msg-txt rounded" [class.in-msg]="msg.incoming" [class.out-msg]="!msg.incoming">  
           <small>{{msg.mtext}} </small>
         </div>
         <div class="msg-img-div" [class.in-img]="msg.incoming" [class.out-img]="!msg.incoming"> 
-          <img [class.hide-img]="!msg.incoming" src="../../assets/soldier.png">
+          <img [class.hide-img]="!msg.incoming" src="assets/soldier.png">
         </div>
       </div>
 
