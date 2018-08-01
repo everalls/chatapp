@@ -1,0 +1,83 @@
+{
+  "configVersion": 1,
+  "index": "/chatapp/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "urls": [
+        "/chatapp/favicon.ico",
+        "/chatapp/index.html",
+        "/chatapp/inline.318b50c57b4eba3d437b.bundle.js",
+        "/chatapp/main.01bef3253a8885b70618.bundle.js",
+        "/chatapp/polyfills.50b851ccd19aa9b94ce1.bundle.js",
+        "/chatapp/styles.cc397e94456bf64c2c42.bundle.css"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "urls": [
+        "/chatapp/assets/10.png",
+        "/chatapp/assets/20.png",
+        "/chatapp/assets/30.png",
+        "/chatapp/assets/40.png",
+        "/chatapp/assets/50.png",
+        "/chatapp/assets/60.png",
+        "/chatapp/assets/70.png",
+        "/chatapp/assets/icon-128x128.png",
+        "/chatapp/assets/icon-152x152.png",
+        "/chatapp/assets/icon-256x256.png",
+        "/chatapp/assets/icon-512x512.png",
+        "/chatapp/assets/profile_placeholder.png",
+        "/chatapp/assets/soldier.png",
+        "/chatapp/assets/trump.png"
+      ],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [],
+  "hashTable": {
+    "/chatapp/assets/10.png": "0285d2b38014d7a8b72ebf77c066bb60defa57b2",
+    "/chatapp/assets/20.png": "215b3be741c384193d172506e0c6ce63c870c117",
+    "/chatapp/assets/30.png": "0dd493bd5b827acee504f04d8229bf9d8d0d34b1",
+    "/chatapp/assets/40.png": "c31fee8eddc3b96cd9cc5fd618c52cacd67a951e",
+    "/chatapp/assets/50.png": "9be20b50a0de650098b6238ef7e1d955bb654cf6",
+    "/chatapp/assets/60.png": "0b144b4f7918f4e7c0dd2bd2e4f19f22295af78c",
+    "/chatapp/assets/70.png": "0555a0d99ff29446f5cf80cfd56dceb0c9625b4e",
+    "/chatapp/assets/icon-128x128.png": "3a05658b0040880b75350f6185ff7b165e1c935b",
+    "/chatapp/assets/icon-152x152.png": "2c456d8ab58052b50362a3a0af269850a57dd160",
+    "/chatapp/assets/icon-256x256.png": "8ba7a9983bdb90f1f0d825293014e06a729fe4ef",
+    "/chatapp/assets/icon-512x512.png": "bac190c8379e6cf1844d77df002a47e55f09892f",
+    "/chatapp/assets/profile_placeholder.png": "57adc0938be4669486b8aa3345f452d0893ce127",
+    "/chatapp/assets/soldier.png": "45ca969576bc90819bf29ffc7d98664150d35506",
+    "/chatapp/assets/trump.png": "cb07afa2574a1812e16c4e92d4102f0be4f9d68a",
+    "/chatapp/favicon.ico": "84161b857f5c547e3699ddfbffc6d8d737542e01",
+    "/chatapp/index.html": "1846f2023c13ab3df7ddd5e2f9f34e7a179194e8",
+    "/chatapp/inline.318b50c57b4eba3d437b.bundle.js": "998c6060446975e566fd17509558ddc68d72eec3",
+    "/chatapp/main.01bef3253a8885b70618.bundle.js": "474b21ee56ccf0c82a997d31cfb3d4a981825dd5",
+    "/chatapp/polyfills.50b851ccd19aa9b94ce1.bundle.js": "106347cf1a53b1dceace39e0d83e6b93936bb95b",
+    "/chatapp/styles.cc397e94456bf64c2c42.bundle.css": "921fce5cfcbff5e86ae4e3b9b050a33ca5d72142"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*\\.[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*\\/.*$"
+    }
+  ]
+}
