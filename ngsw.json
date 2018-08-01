@@ -10,7 +10,7 @@
         "https://everalls.github.io/chatapp/favicon.ico",
         "https://everalls.github.io/chatapp/index.html",
         "https://everalls.github.io/chatapp/inline.318b50c57b4eba3d437b.bundle.js",
-        "https://everalls.github.io/chatapp/main.275d04c3bf25ac4c61d9.bundle.js",
+        "https://everalls.github.io/chatapp/main.c9ba4e1c3e2c901924fb.bundle.js",
         "https://everalls.github.io/chatapp/polyfills.50b851ccd19aa9b94ce1.bundle.js",
         "https://everalls.github.io/chatapp/styles.cc397e94456bf64c2c42.bundle.css"
       ],
@@ -56,9 +56,9 @@
     "https://everalls.github.io/chatapp/assets/soldier.png": "45ca969576bc90819bf29ffc7d98664150d35506",
     "https://everalls.github.io/chatapp/assets/trump.png": "cb07afa2574a1812e16c4e92d4102f0be4f9d68a",
     "https://everalls.github.io/chatapp/favicon.ico": "84161b857f5c547e3699ddfbffc6d8d737542e01",
-    "https://everalls.github.io/chatapp/index.html": "66c7f84ccc7bea5572da51f3b972d0bac2a7dfaa",
+    "https://everalls.github.io/chatapp/index.html": "aef3f50ba2ce6a4805fcb4a6007b99e4f0ab4ba5",
     "https://everalls.github.io/chatapp/inline.318b50c57b4eba3d437b.bundle.js": "998c6060446975e566fd17509558ddc68d72eec3",
-    "https://everalls.github.io/chatapp/main.275d04c3bf25ac4c61d9.bundle.js": "c505915fa23005ed43d49e6e459b896c30c85611",
+    "https://everalls.github.io/chatapp/main.c9ba4e1c3e2c901924fb.bundle.js": "4fd07ed6a515880a975dc2cac6cd2807b5656bef",
     "https://everalls.github.io/chatapp/polyfills.50b851ccd19aa9b94ce1.bundle.js": "106347cf1a53b1dceace39e0d83e6b93936bb95b",
     "https://everalls.github.io/chatapp/styles.cc397e94456bf64c2c42.bundle.css": "921fce5cfcbff5e86ae4e3b9b050a33ca5d72142"
   },
